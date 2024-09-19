@@ -1,11 +1,12 @@
 /* Global Styles */
 
 :root {
-	--white: #fff;
-	--electric-blue: #1614f4;
+	--white: rgb(255, 255, 255);
+	--electric-blue: color(display-p3 0.1 0.1 1);
+	--dark-blue: rgb(7, 7, 118);
 
 	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
+	color: var(--white);
 	background-color: var(--electric-blue);
 
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -15,23 +16,6 @@
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
-	--shadow-color: 227deg 19% 60%;
-	--shadow-elevation-low: 0px 0.7px 0.8px hsl(var(--shadow-color) / 0.34),
-		0px 1.1px 1.2px -1.2px hsl(var(--shadow-color) / 0.34),
-		0px 2.8px 3.1px -2.5px hsl(var(--shadow-color) / 0.34);
-	--shadow-elevation-medium: 0px 0.7px 0.8px hsl(var(--shadow-color) / 0.36),
-		0px 2.3px 2.6px -0.8px hsl(var(--shadow-color) / 0.36),
-		0px 5.7px 6.4px -1.7px hsl(var(--shadow-color) / 0.36),
-		0.1px 13.8px 15.5px -2.5px hsl(var(--shadow-color) / 0.36);
-	--shadow-elevation-high: 0px 0.7px 0.8px hsl(var(--shadow-color) / 0.34),
-		0px 4px 4.5px -0.4px hsl(var(--shadow-color) / 0.34),
-		0px 7.5px 8.4px -0.7px hsl(var(--shadow-color) / 0.34),
-		0.1px 12.4px 14px -1.1px hsl(var(--shadow-color) / 0.34),
-		0.1px 19.7px 22.2px -1.4px hsl(var(--shadow-color) / 0.34),
-		0.2px 30.9px 34.8px -1.8px hsl(var(--shadow-color) / 0.34),
-		0.2px 46.9px 52.8px -2.1px hsl(var(--shadow-color) / 0.34),
-		0.4px 69.1px 77.7px -2.5px hsl(var(--shadow-color) / 0.34);
 
 	--base-padding: clamp(1.5rem, 4vw, 3rem);
 	--fill-container: calc(100% - var(--base-padding) * 2);
@@ -51,7 +35,7 @@
 }
 
 .btn--primary {
-	color: #070776;
+	color: var(--dark-blue);
 
 	&:hover {
 		background-color: color-mix(in srgb, var(--white) 80%, transparent);
@@ -81,6 +65,8 @@
 
 	p {
 		font-size: 1.5rem;
+		font-weight: 800;
+		margin-block: 0;
 	}
 
 	svg {
@@ -93,6 +79,10 @@
 		writing-mode: vertical-lr;
 		transform: rotate(180deg);
 
+		p {
+			font-size: clamp(3rem, 5vw, 4rem);
+		}
+
 		svg {
 			transform: rotate(90deg);
 		}
@@ -102,6 +92,10 @@
 		flex-direction: column;
 		writing-mode: horizontal-tb;
 		transform: rotate(-360deg);
+
+		p {
+			font-size: 2rem;
+		}
 
 		svg {
 			transform: rotate(0deg);
@@ -126,7 +120,7 @@ body {
 	@media screen and (min-width: 48em) {
 		grid-template-columns: repeat(6, 1fr);
 		grid-template-areas:
-			'. . a2 a2 a2 a2'
+			'a1 a1 a2 a2 a2 a2'
 			'a1 a1 a2 a2 a2 a2'
 			'b1 b1 b1 b1 b1 b1';
 	}
@@ -150,21 +144,15 @@ body {
 
 .a1 {
 	grid-area: a1;
-	background-color: #1614f4;
+	background-color: var(--electric-blue);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	& p {
-		font-size: 2rem;
-		font-weight: 800;
-		margin-block: 0;
-	}
 }
 
 .a2 {
 	grid-area: a2;
-	background-color: #fff;
+	background-color: var(--white);
 
 	& h1 {
 		color: var(--electric-blue);
@@ -194,7 +182,7 @@ body {
 
 .b1 {
 	grid-area: b1;
-	background-color: #070776;
+	background-color: var(--dark-blue);
 	display: flex;
 	flex-direction: column;
 
