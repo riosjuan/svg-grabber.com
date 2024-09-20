@@ -6,11 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
 		<title>svg-grabber</title>
+		<meta
+			name="description"
+			content="A Chrome extension to preview, copy and download all the SVGs from any website"
+		/>
 	</head>
-	<body>
-		<div class="a1">
+	<body class="grid">
+		<div class="section-a">
 			<div class="logo">
-				<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+				<svg class="logo-svg" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
 					<path
 						d="M20 59V45h12v6h8v6h6V39h8v8h6V33h12v14h6v-8h8v12h6v-6h8v24h-6v14h-6v12h-6v-6h-6v6H50v-6h-6v-6h-6v-6h-6V65h-6v-6h-6Z"
 						fill="#fff"
@@ -20,17 +24,19 @@
 						fill="#000"
 					/>
 				</svg>
-				<p>&lt;svg&gt;grabber</p>
+				<p class="logo-text">&lt;svg&gt;grabber</p>
 			</div>
 		</div>
-		<div class="a2">
-			<h1>A Chrome extension to preview, copy and download all the SVGs from any website</h1>
+		<div class="section-b">
+			<h1 class="title">
+				A Chrome extension to preview, copy and download all the SVGs from any website
+			</h1>
 			<div class="screenshot-container">
 				<img class="screenshot" src="/svg-grabber-01.png" alt="" />
 			</div>
 		</div>
-		<div class="b1">
-			<p>
+		<div class="section-c">
+			<p class="description">
 				With svg-grabber, you can preview, download, or copy the code for every SVG icon and
 				illustration—ready to use in design tools like Sketch, Figma, or Framer.
 			</p>
@@ -44,7 +50,7 @@
 					>Star on Github</a
 				>
 			</div>
-			<footer>Copyright &copy; <span id="year"></span> svg-grabber.</footer>
+			<footer class="footer">Copyright &copy; <span id="year"></span> svg-grabber.</footer>
 		</div>
 	</body>
 	<script>
