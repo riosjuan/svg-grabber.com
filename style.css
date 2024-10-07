@@ -54,6 +54,7 @@
 	border: 1px solid var(--color-white);
 	text-decoration: none;
 	transition: background-color 200ms ease-in-out;
+	text-align: center;
 }
 
 .btn--primary {
@@ -78,6 +79,10 @@
 	gap: 1rem;
 	flex-wrap: wrap;
 	margin-block: 2rem 4rem;
+
+	@container (width < 25em) {
+		flex-direction: column;
+	}
 }
 
 .logo {
@@ -200,6 +205,7 @@
 	background-color: var(--color-dark-blue);
 	display: flex;
 	flex-direction: column;
+	container-type: inline-size;
 }
 
 .footer {
