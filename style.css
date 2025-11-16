@@ -211,3 +211,12 @@
 .footer {
 	margin-block-start: auto;
 }
+
+.footer-link {
+	color: var(--color-white);
+	transition: color 200ms ease-in-out;
+
+	&:hover {
+		opacity: 0.6;
+	}
+}
