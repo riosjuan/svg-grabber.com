@@ -1,0 +1,34 @@
+:root {
+	--palette-electric-blue: oklch(46% 0.31 266.02);
+	--palette-white: rgb(255 255 255);
+	--palette-dark-blue: lch(from var(--palette-electric-blue) calc(l - 40) c h);
+	--palette-shadow-blue: lch(from var(--palette-electric-blue) calc(l - 40) c h / 15%);
+
+	/* Semantic mapping (use these in components) */
+	--color-bg-primary: var(--palette-electric-blue);
+	--color-bg-secondary: var(--palette-dark-blue);
+	--color-bg-surface: var(--palette-white);
+	--color-text-primary: var(--palette-white);
+	--color-text-secondary: var(--palette-dark-blue);
+	--color-shadow: var(--palette-shadow-blue);
+
+	/* Type scale */
+	--font-family-system: Inter, system-ui, Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--type-base-size: 1rem;
+	--type-scale-ratio: 1.25;
+
+	/* Spacing scale */
+	--space-1: 0.25rem;
+	--space-2: 0.5rem;
+	--space-3: 1rem;
+	--space-4: 1.5rem;
+	--space-5: 2.5rem;
+	--space-6: 4rem;
+
+	/* Layout variables */
+	--base-padding: clamp(1.5rem, 4vw, 4rem);
+
+	/* Motion / accessibility */
+	--motion-fast: 150ms;
+	--motion-medium: 200ms;
+}

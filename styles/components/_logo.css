@@ -1,0 +1,49 @@
+/* Logo component */
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-block: clamp(1.5rem, 4vw, 3rem) clamp(2rem, 4vw, 4rem);
+}
+
+.logo__text {
+	font-size: 1.5rem;
+	font-weight: 800;
+	margin: 0;
+	text-align: center;
+}
+
+.logo__svg {
+	width: 5rem;
+	height: 5rem;
+}
+
+/* Larger screens */
+@media screen and (min-width: 48em) {
+	.logo {
+		flex-direction: row;
+		writing-mode: vertical-lr;
+		transform: rotate(180deg);
+	}
+	.logo__text {
+		font-size: clamp(3rem, 5vw, 4rem);
+	}
+	.logo__svg {
+		transform: rotate(90deg);
+	}
+}
+
+@media screen and (min-width: 90em) {
+	.logo {
+		flex-direction: column;
+		writing-mode: horizontal-tb;
+		transform: rotate(-360deg);
+	}
+	.logo__text {
+		font-size: 2rem;
+	}
+	.logo__svg {
+		transform: rotate(0deg);
+	}
+}

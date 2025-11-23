@@ -1,0 +1,72 @@
+/* Grid layout */
+
+.grid {
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		'section-a'
+		'section-b'
+		'section-c';
+	min-width: 0;
+	min-height: 100dvh;
+}
+
+/* medium screens */
+@media screen and (min-width: 48em) {
+	.grid {
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-areas:
+			'section-a section-a section-b section-b section-b section-b'
+			'section-a section-a section-b section-b section-b section-b'
+			'section-c section-c section-c section-c section-c section-c';
+	}
+}
+
+/* large screens */
+@media screen and (min-width: 90em) {
+	.grid {
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-areas:
+			'section-a section-a section-b section-b section-b section-b'
+			'section-c section-c section-b section-b section-b section-b'
+			'section-c section-c section-b section-b section-b section-b';
+	}
+}
+
+.section-a,
+.section-b,
+.section-c {
+	padding: var(--base-padding);
+}
+
+.section-a {
+	grid-area: section-a;
+	background-color: var(--color-bg-primary);
+	display: flex;
+	place-content: center;
+	flex-wrap: wrap;
+}
+
+@media screen and (min-width: 90em) {
+	.section-a {
+		aspect-ratio: 16 / 9;
+	}
+}
+
+.section-b {
+	grid-area: section-b;
+	background-color: var(--color-bg-surface);
+	display: flex;
+	gap: 2.5rem;
+	flex-direction: column;
+	place-content: center;
+}
+
+.section-c {
+	grid-area: section-c;
+	background-color: var(--color-bg-secondary);
+	display: flex;
+	flex-direction: column;
+	container-type: inline-size;
+}

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/svg-grabber-icon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="main.css" />
 		<!-- HTML Meta Tags -->
 		<title>svg-grabber</title>
 		<meta
@@ -36,40 +36,48 @@
 	</head>
 	<body class="grid">
 		<div class="section-a">
-			<div class="logo">
-				<svg class="logo-svg" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-					<path
-						d="M20 59V45h12v6h8v6h6V39h8v8h6V33h12v14h6v-8h8v12h6v-6h8v24h-6v14h-6v12h-6v-6h-6v6H50v-6h-6v-6h-6v-6h-6V65h-6v-6h-6Z"
-						fill="#fff"
-					/>
-					<path
-						d="M20 65v-6h6v6h-6ZM32 77h-6V65h6v12ZM38 83h-6v-6h6v6ZM44 89h-6v-6h6v6ZM76 95v6H44V89h6v6h26ZM82 95h-6v-6h6v6ZM94 83v18H82v-6h6V83h6ZM100 69v14h-6V69h6ZM72 33h20v6h14v30h-6V45h-8v6h-6V39h-8v8h-6V33ZM60 33v-6h12v6H60ZM32 45h8V33h20v14h-6v-8h-8v18h-6v-6h-8v-6ZM20 45v-6h12v6H20ZM20 45h-6v14h6V45ZM60 59h-6v24h6V59ZM66 59h6v24h-6V59ZM84 59h-6v24h6V59Z"
-						fill="#000"
-					/>
-				</svg>
-				<p class="logo-text">&lt;svg&gt;grabber</p>
+			<div class="section-a__frame">
+				<div class="logo">
+					<svg
+						class="logo__svg"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 128 128"
+					>
+						<path
+							d="M20 59V45h12v6h8v6h6V39h8v8h6V33h12v14h6v-8h8v12h6v-6h8v24h-6v14h-6v12h-6v-6h-6v6H50v-6h-6v-6h-6v-6h-6V65h-6v-6h-6Z"
+							fill="#fff"
+						/>
+						<path
+							d="M20 65v-6h6v6h-6ZM32 77h-6V65h6v12ZM38 83h-6v-6h6v6ZM44 89h-6v-6h6v6ZM76 95v6H44V89h6v6h26ZM82 95h-6v-6h6v6ZM94 83v18H82v-6h6V83h6ZM100 69v14h-6V69h6ZM72 33h20v6h14v30h-6V45h-8v6h-6V39h-8v8h-6V33ZM60 33v-6h12v6H60ZM32 45h8V33h20v14h-6v-8h-8v18h-6v-6h-8v-6ZM20 45v-6h12v6H20ZM20 45h-6v14h6V45ZM60 59h-6v24h6V59ZM66 59h6v24h-6V59ZM84 59h-6v24h6V59Z"
+							fill="#000"
+						/>
+					</svg>
+					<p class="logo__text">&lt;svg&gt;grabber</p>
+				</div>
 			</div>
 		</div>
 		<div class="section-b">
-			<h1 class="title">
-				A Chrome extension to preview, copy and download all the SVGs from any website
-			</h1>
-			<div class="screenshot-container">
-				<img class="screenshot" src="/svg-grabber-01.png" alt="" />
+			<h1 class="title">Preview, copy, and download SVGs from any website</h1>
+			<div class="screenshot">
+				<img
+					src="/svg-grabber-01.png"
+					alt="A browser window displaying the “svg-grabber” Chrome extension page, showing a header that says “All SVGs from → Home / X” with a link to x.com/home. Below it is a grid of large icon previews, each in a white card with “Copy” and “Download” buttons. Visible icons include an envelope with a plus sign, double upward arrows, the stylized X logo, a house icon, and a magnifying glass search icon."
+				/>
 			</div>
 		</div>
 		<div class="section-c">
 			<p class="description">
-				With svg-grabber, you can preview, download, or copy the code for every SVG icon and
-				illustration—ready to use in design tools like Sketch, Figma, or Framer.
+				With svg-grabber, you can preview, download, or copy the code for any SVG icon or
+				illustration, ready to use in Sketch, Figma, or Framer.
 			</p>
-			<div class="btn-container">
+			<div class="button-container">
 				<a
-					class="btn btn--primary"
+					class="button button--primary"
 					href="https://chromewebstore.google.com/detail/svg-grabber-get-all-the-s/eafjmnaiohflfhelegodfedimibnjpgp"
 					>Get the Extension</a
 				>
-				<a class="btn btn--secondary" href="https://github.com/riosjuan/svg-grabber"
+				<a class="button button--secondary" href="https://github.com/riosjuan/svg-grabber"
 					>Star on Github</a
 				>
 			</div>
