@@ -1,11 +1,6 @@
 .screenshot {
-	/*padding: clamp(1rem, 4vw, 3rem) clamp(0rem, 4vw, 6rem);*/
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-
-	& img {
-		filter: drop-shadow(var(--color-shadow) 0 2rem 2rem);
-	}
+	object-fit: scale-down;
+	width: max(80%, 48rem);
+	height: auto;
+	filter: drop-shadow(var(--color-shadow) 0 2rem 2rem);
 }
