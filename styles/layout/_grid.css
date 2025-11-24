@@ -43,24 +43,17 @@
 .section-a {
 	grid-area: section-a;
 	background-color: var(--color-bg-primary);
-	display: flex;
-	place-content: center;
-	flex-wrap: wrap;
-}
-
-@media screen and (min-width: 90em) {
-	.section-a {
-		aspect-ratio: 16 / 9;
-	}
+	display: grid;
+	place-items: center;
 }
 
 .section-b {
 	grid-area: section-b;
 	background-color: var(--color-bg-surface);
-	display: flex;
+	display: grid;
+	grid-template-rows: auto 1fr;
 	gap: 2.5rem;
-	flex-direction: column;
-	place-content: center;
+	place-items: center;
 }
 
 .section-c {

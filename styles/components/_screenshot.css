@@ -1,8 +1,9 @@
 .screenshot {
-	padding: clamp(1rem, 4vw, 3rem) clamp(0rem, 4vw, 6rem);
+	/*padding: clamp(1rem, 4vw, 3rem) clamp(0rem, 4vw, 6rem);*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 100%;
 
 	& img {
 		filter: drop-shadow(var(--color-shadow) 0 2rem 2rem);
