@@ -2,7 +2,7 @@
 	display: flex;
 	gap: 1rem;
 	flex-wrap: wrap;
-	margin-block: 2rem 4rem;
+	margin-block: 2rem 0;
 
 	@container (width < 25em) {
 		flex-direction: column;
