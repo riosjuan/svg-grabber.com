@@ -4,8 +4,9 @@
 
 .footer-link {
 	color: var(--color-bg-surface);
-	transition: opacity 200ms ease-in-out;
+	transition: opacity var(--motion-fast) ease-in-out;
 	text-decoration: none;
+	text-transform: uppercase;
 
 	&:hover {
 		opacity: 0.8;

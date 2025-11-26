@@ -2,5 +2,5 @@
 	object-fit: scale-down;
 	width: max(80%, 48rem);
 	height: auto;
-	filter: drop-shadow(var(--color-shadow) 0 2rem 2rem);
+	filter: drop-shadow(var(--color-shadow) 0 var(--s-5) var(--s-5));
 }

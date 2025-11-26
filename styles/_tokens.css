@@ -17,13 +17,14 @@
 	--type-base-size: 1rem;
 	--type-scale-ratio: 1.25;
 
-	/* Spacing scale */
-	--space-1: 0.25rem;
-	--space-2: 0.5rem;
-	--space-3: 1rem;
-	--space-4: 1.5rem;
-	--space-5: 2.5rem;
-	--space-6: 4rem;
+	/* Spacing and size scale */
+	--s-1: 0.25rem;
+	--s-2: 0.5rem;
+	--s-3: 1rem;
+	--s-4: 1.5rem;
+	--s-5: 2.5rem;
+	--s-6: 4rem;
+	--s-7: 6rem;
 
 	/* Layout variables */
 	--block-padding: clamp(1.5rem, 6vh, 8em);

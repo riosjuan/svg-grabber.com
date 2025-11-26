@@ -55,7 +55,7 @@
 	background-color: var(--color-bg-surface);
 	display: grid;
 	grid-template-rows: auto 1fr;
-	gap: 2.5rem;
+	gap: var(--s-5);
 	place-items: center;
 }
 
@@ -68,7 +68,7 @@
 .section-d {
 	grid-area: section-d;
 	background-color: var(--color-bg-secondary);
-	padding: 2rem var(--inline-padding);
+	padding: var(--s-5) var(--inline-padding);
 	display: flex;
 	flex-direction: column;
 }
