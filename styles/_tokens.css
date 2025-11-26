@@ -1,15 +1,15 @@
 :root {
-	--palette-electric-blue: oklch(46% 0.31 266.02);
+	--palette-electric-blue: oklch(48% 0.31 266.02);
 	--palette-white: rgb(255 255 255);
 	--palette-dark-blue: lch(from var(--palette-electric-blue) calc(l - 40) c h);
-	--palette-shadow-blue: lch(from var(--palette-electric-blue) calc(l - 40) c h / 15%);
+	--palette-shadow-blue: lch(from var(--palette-electric-blue) calc(l - 40) c h / 20%);
 
 	/* Semantic mapping (use these in components) */
 	--color-bg-primary: var(--palette-electric-blue);
 	--color-bg-secondary: var(--palette-dark-blue);
 	--color-bg-surface: var(--palette-white);
 	--color-text-primary: var(--palette-white);
-	--color-text-secondary: var(--palette-dark-blue);
+	--color-text-secondary: var(--palette-electric-blue);
 	--color-shadow: var(--palette-shadow-blue);
 
 	/* Type scale */
