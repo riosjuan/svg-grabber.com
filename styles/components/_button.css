@@ -9,6 +9,9 @@
 	text-decoration: none;
 	transition: background-color var(--motion-fast) ease-in-out;
 	text-align: center;
+	display: flex;
+	align-items: center;
+	column-gap: var(--s-2);
 }
 
 .button--primary {

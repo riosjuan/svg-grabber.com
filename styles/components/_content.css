@@ -1,0 +1,6 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	row-gap: clamp(var(--s-5), 4vw, var(--s-7));
+	padding-block: clamp(var(--s-2), 4vw, var(--s-7));
+}

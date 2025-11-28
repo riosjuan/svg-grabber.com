@@ -1,5 +1,5 @@
 .footer {
-	margin-block-start: auto;
+	padding-block: var(--s-5);
 }
 
 .footer-link {

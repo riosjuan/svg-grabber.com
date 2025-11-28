@@ -1,10 +1,10 @@
+.max-width-container {
+	max-width: 80rem;
+	margin-inline: auto;
+}
+
 .button-container {
 	display: flex;
-	gap: 1rem;
+	gap: var(--s-3);
 	flex-wrap: wrap;
-	margin-block: 2rem 0;
-
-	@container (width < 25em) {
-		flex-direction: column;
-	}
 }
