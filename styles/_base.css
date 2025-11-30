@@ -9,27 +9,38 @@
 }
 
 html {
-	background-color: var(--color-bg-primary);
+	background: var(--color-light-blue);
+	font-size: 16px;
+	min-height: -webkit-fill-available;
+	scroll-behavior: smooth;
+	scroll-padding-top: calc(var(--font-size) * 3.4);
 }
 
-html,
 body {
-	min-height: 100dvh;
-	color: var(--color-text-primary);
-	font-family: var(--font-family-system);
-	font-weight: 400;
-	line-height: 1.5;
+	/*min-height: 100dvh;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
-	font-synthesis: none;
-	color-scheme: light dark;
+	font-synthesis: none; */
+
+	background: var(--color-blue);
+	color: var(--color-light-blue);
+	display: flex;
+	flex-direction: column;
+	font-family: var(--font-family-system);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-weight: 400;
+	/*letter-spacing: var(--letter-spacing);*/
+	line-height: 1.5;
+	min-height: 100dvh;
+	-webkit-tap-highlight-color: rgba(var(--rgb-blue-light), 0);
+	text-rendering: optimizeLegibility;
 }
 
 body {
 	padding-inline: var(--s-4);
-	min-height: 100vh;
-	min-height: 100dvh;
 }
 
 /* images & svg */

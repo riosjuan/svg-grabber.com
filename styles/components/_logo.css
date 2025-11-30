@@ -1,17 +1,20 @@
 .logo {
+	--logo-size: clamp(var(--s-6), var(--scaling-factor), var(--s-7));
+
 	display: flex;
 	align-items: center;
 	column-gap: var(--s-2);
 }
 
 .logo__text {
-	font-size: clamp(1rem, 2vw, 2rem);
+	color: var(--color-white);
+	font-size: clamp(1.5rem, 2vw, 3rem);
 	font-weight: 600;
 	margin: 0;
 	text-align: center;
 }
 
 .logo__svg {
-	width: var(--s-5);
-	height: var(--s-5);
+	width: var(--logo-size);
+	height: var(--logo-size);
 }

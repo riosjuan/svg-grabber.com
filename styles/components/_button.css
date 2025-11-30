@@ -1,32 +1,32 @@
-/* Button component*/
-
 .button {
 	font-weight: 600;
 	padding: var(--s-2) var(--s-3);
-	background-color: var(--color-bg-surface);
+	background-color: transparent;
 	border-radius: var(--s-2);
-	border: 1px solid var(--color-bg-surface);
+	border: 1px solid var(--color-light-blue);
 	text-decoration: none;
 	transition: background-color var(--motion-fast) ease-in-out;
 	text-align: center;
 	display: flex;
 	align-items: center;
 	column-gap: var(--s-2);
+	justify-content: center;
 }
 
 .button--primary {
-	color: var(--color-text-secondary);
+	background-color: var(--color-light-blue);
+	color: var(--color-blue);
 
 	&:hover {
-		background-color: color-mix(in srgb, var(--color-bg-surface) 80%, transparent);
+		background-color: color-mix(in srgb, var(--color-light-blue), transparent 80%);
 	}
 }
 
 .button--secondary {
 	background-color: transparent;
-	color: var(--color-bg-surface);
+	color: var(--color-light-blue);
 
 	&:hover {
-		background-color: color-mix(in srgb, var(--color-bg-surface) 10%, transparent);
+		background-color: color-mix(in srgb, var(--color-light-blue), transparent 90%);
 	}
 }

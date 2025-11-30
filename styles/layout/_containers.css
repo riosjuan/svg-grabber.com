@@ -1,10 +1,13 @@
 .max-width-container {
-	max-width: 80rem;
 	margin-inline: auto;
+	width: min(100%, 80rem);
 }
 
 .button-container {
 	display: flex;
 	gap: var(--s-3);
-	flex-wrap: wrap;
+
+	@container (width < 24em) {
+		flex-direction: column-reverse;
+	}
 }
