@@ -1,7 +1,7 @@
 .content {
 	display: flex;
 	flex-direction: column;
-	row-gap: clamp(var(--s-5), 4vw, var(--s-7));
-	padding-block: clamp(var(--s-4), 4vw, var(--s-7));
+	row-gap: clamp(var(--s-5), var(--scale), var(--s-7));
+	padding-block: clamp(var(--s-4), var(--scale), var(--s-7));
 	container-type: inline-size;
 }

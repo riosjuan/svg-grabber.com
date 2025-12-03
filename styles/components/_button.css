@@ -1,5 +1,5 @@
 .button {
-	font-weight: 600;
+	font-weight: var(--font-weight-bold);
 	padding: var(--s-2) var(--s-3);
 	background-color: transparent;
 	border-radius: var(--s-2);

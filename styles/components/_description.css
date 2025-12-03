@@ -1,6 +1,7 @@
 .description {
-	font-size: clamp(var(--s-4), var(--scaling-factor), var(--s-5));
-	font-weight: 350;
+	--correction: 1.5rem;
+	font-size: clamp(var(--s-4), var(--scale) - var(--correction), var(--s-5));
+	font-weight: var(--font-weight-normal);
 	margin-block-end: var(--s-4);
 	max-width: 40ch;
 }

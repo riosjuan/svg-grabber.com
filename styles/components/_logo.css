@@ -1,5 +1,5 @@
 .logo {
-	--logo-size: clamp(var(--s-6), var(--scaling-factor), var(--s-7));
+	--logo-size: clamp(var(--s-5), var(--scale), var(--s-6));
 
 	display: flex;
 	align-items: center;
@@ -8,8 +8,8 @@
 
 .logo__text {
 	color: var(--color-white);
-	font-size: clamp(1.5rem, 2vw, 3rem);
-	font-weight: 600;
+	font-size: clamp(var(--s-3), var(--scale), var(--s-4));
+	font-weight: var(--font-weight-bold);
 	margin: 0;
 	text-align: center;
 }
