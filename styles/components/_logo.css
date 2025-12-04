@@ -1,13 +1,13 @@
 .logo {
 	--logo-size: clamp(var(--s-5), var(--scale), var(--s-6));
 
-	display: flex;
 	align-items: center;
 	column-gap: var(--s-2);
+	display: flex;
 }
 
 .logo__text {
-	color: var(--color-white);
+	color: var(--color-text-primary, var(--color-text));
 	font-size: clamp(var(--s-3), var(--scale), var(--s-4));
 	font-weight: var(--font-weight-bold);
 	margin: 0;
@@ -15,6 +15,6 @@
 }
 
 .logo__svg {
-	width: var(--logo-size);
 	height: var(--logo-size);
+	width: var(--logo-size);
 }

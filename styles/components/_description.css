@@ -1,7 +1,8 @@
 .description {
 	--correction: 1.5rem;
 	font-size: clamp(var(--s-4), var(--scale) - var(--correction), var(--s-5));
-	font-weight: var(--font-weight-normal);
-	margin-block-end: var(--s-4);
+	font-weight: var(--font-weight-regular);
+	margin-block-start: 1em;
+	margin-block-end: 0.8em;
 	max-width: 40ch;
 }

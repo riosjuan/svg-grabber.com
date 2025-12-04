@@ -1,6 +1,14 @@
 .screenshot {
+	box-shadow:
+		0 0 0 1px oklch(var(--lch-blue-dark) / 0.05),
+		0 0.1em 2.8em -0.8em oklch(var(--lch-blue-dark) / 0.05),
+		0 0.2em 3.2em -1.2em oklch(var(--lch-blue-dark) / 0.15),
+		0 0.4em 2em -1.2em oklch(var(--lch-blue-dark) / 0.25),
+		0 0.6em 2.4em -1.6em oklch(var(--lch-blue-dark) / 0.35),
+		0 0.8em 2.8em -2em oklch(var(--lch-blue-dark) / 0.45);
+	font-size: clamp(var(--s-4), var(--scale) - var(--correction, 1em), var(--s-5));
+	height: auto;
+	margin-block-start: 2em;
 	object-fit: scale-down;
 	width: max(80%, 48rem);
-	height: auto;
-	filter: drop-shadow(var(--color-dark-blue) 0 var(--s-5) var(--s-5));
 }
