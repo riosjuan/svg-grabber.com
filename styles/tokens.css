@@ -1,0 +1,59 @@
+@layer tokens {
+	:root {
+		--h-blue: 265;
+		--lch-blue: 46% 0.3 var(--h-blue);
+		--lch-blue-dark: 20% 0.3 var(--h-blue);
+		--lch-blue-light: 100% 0.07 var(--h-blue);
+		--lch-white: 100% 0% 0;
+
+		--color-background: oklch(var(--lch-blue));
+		--color-text: oklch(var(--lch-blue-light));
+		--color-text-primary: oklch(var(--lch-white));
+		--color-border: oklch(var(--lch-white) / 0.25);
+
+		/* Font settings */
+		--font-family:
+			'InterVariable', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+		--font-size: calc(1em + 1vw);
+		--font-size-small: 90%;
+		--font-size-medium: 100%;
+		--font-size-large: 125%;
+		--font-size-x-large: 150%;
+		--font-size-xx-large: 200%;
+
+		/* Font weight */
+		--font-weight: 400;
+		--font-weight-medium: 500;
+		--font-weight-semi-bold: 600;
+		--font-weight-bold: 700;
+
+		/* Letter spacing */
+		--letter-spacing: -0.01em;
+		--line-height: calc(1.3em + 0.5vw);
+
+		/*Spacing*/
+		--inline-spacing: 1ch;
+		--block-spacing: 1rem;
+
+		/* Motion */
+		--motion-fast: 150ms;
+		--motion-medium: 200ms;
+
+		--border-radius: 0.5rem;
+
+		--scale: 4.5vw;
+	}
+
+	@media (min-width: 64em) and (hover: hover) and (pointer: fine) {
+		:root {
+			--font-size: calc(1.25em + 1vw);
+			--font-size-small: 60%;
+			--font-size-medium: 90%;
+			--font-size-large: 125%;
+			--font-size-x-large: 175%;
+			--font-size-xx-large: 250%;
+			--line-height: 1.3em;
+		}
+	}
+}

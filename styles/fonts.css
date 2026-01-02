@@ -1,0 +1,9 @@
+@layer fonts {
+	@font-face {
+		font-display: swap;
+		font-family: InterVariable;
+		font-style: normal;
+		font-weight: 100 900;
+		src: url('/InterVariable.woff2') format('woff2');
+	}
+}
