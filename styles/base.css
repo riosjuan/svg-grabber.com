@@ -20,11 +20,8 @@
 		padding: 0;
 	}
 
-	img,
-	svg {
-		display: block;
-		max-width: 100%;
-		height: auto;
+	section {
+		margin-block: calc(var(--line-height) * 2);
 	}
 
 	h2 {
@@ -40,5 +37,12 @@
 		margin-block-end: var(--line-height);
 		max-inline-size: 44ch;
 		text-wrap: pretty;
+	}
+
+	img,
+	svg {
+		display: block;
+		max-width: 100%;
+		height: auto;
 	}
 }
