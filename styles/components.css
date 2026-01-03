@@ -53,6 +53,7 @@
 	.footer-link {
 		color: inherit;
 		transition: opacity var(--motion-fast) ease-in-out;
+		text-decoration: none;
 
 		&:hover {
 			opacity: 0.8;
