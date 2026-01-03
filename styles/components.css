@@ -45,7 +45,7 @@
 		margin-block-start: auto;
 		padding-block: var(--block-spacing);
 
-		@container (width > 20rem ) {
+		@container (width > 22rem ) {
 			flex-direction: row;
 		}
 	}
