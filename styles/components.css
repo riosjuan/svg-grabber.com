@@ -5,9 +5,10 @@
 		border-radius: var(--border-radius);
 		border: 1px solid var(--color-text);
 		display: inline-flex;
+		font-size: var(--font-size-small);
 		font-weight: var(--font-weight-semi-bold);
 		justify-content: center;
-		padding: calc(var(--line-height) / 3) var(--inline-spacing);
+		padding: calc(var(--block-spacing) / 2) calc(var(--inline-spacing) * 2);
 		text-align: center;
 		text-decoration: none;
 		transition: background-color var(--motion-fast) ease-in-out;
@@ -25,16 +26,16 @@
 	.footer {
 		align-items: center;
 		border-block-start: 1px solid var(--color-border);
-		color: var(--color-text);
+		color: var(--color-text-secondary);
 		display: flex;
 		flex-direction: column;
-		font-size: var(--font-size-small);
+		font-size: var(--font-size-x-small);
 		gap: calc(var(--inline-spacing) / 2) var(--block-spacing);
 		justify-content: space-between;
 		margin-block-start: auto;
 		padding-block: var(--block-spacing);
 
-		@container (width > 22rem ) {
+		@container (width > 20rem ) {
 			flex-direction: row;
 		}
 	}
