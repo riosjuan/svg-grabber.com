@@ -27,6 +27,13 @@
 		height: auto;
 	}
 
+	h2 {
+		font-size: var(--font-size-medium);
+		line-height: var(--line-height);
+		margin-block-end: calc(var(--line-height) / 3);
+		font-weight: var(--font-weight-bold);
+	}
+
 	p {
 		font-size: var(--font-size-medium);
 		line-height: var(--line-height);
