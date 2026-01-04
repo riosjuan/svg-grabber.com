@@ -10,19 +10,19 @@
 		align-items: center;
 		column-gap: calc(var(--inline-spacing) / 2);
 		display: flex;
-	}
 
-	p {
-		color: var(--color-text-strong);
-		font-size: var(--font-size-small);
-		font-weight: var(--font-weight-bold);
-		margin: 0;
-		text-align: center;
-	}
+		p {
+			color: var(--color-text-strong);
+			font-size: var(--font-size-small);
+			font-weight: var(--font-weight-bold);
+			margin: 0;
+			text-align: center;
+		}
 
-	svg {
-		height: var(--logo-size);
-		width: var(--logo-size);
+		svg {
+			height: var(--logo-size);
+			width: var(--logo-size);
+		}
 	}
 
 	/* Typography helpers */
