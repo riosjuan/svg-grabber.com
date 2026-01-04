@@ -1,5 +1,6 @@
 @layer base {
 	html {
+		background: var(--color-background);
 		color: var(--color-text);
 		font-feature-settings: 'ss01', 'ss03';
 		font-optical-sizing: auto;
