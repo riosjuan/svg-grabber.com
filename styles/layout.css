@@ -1,0 +1,22 @@
+@layer layout {
+	.container {
+		margin-inline: auto;
+		width: min(100%, 80rem);
+	}
+
+	.layout {
+		container-type: inline-size;
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+		min-height: 100dvh;
+		padding-inline: calc(var(--inline-spacing) * 2);
+
+		header {
+			padding-block: 1rem;
+		}
+
+		main {
+			margin-block-start: 3em;
+		}
+	}
+}

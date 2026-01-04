@@ -25,6 +25,7 @@
 	}
 
 	h2 {
+		color: var(--color-text-strong);
 		font-size: var(--font-size-medium);
 		line-height: var(--line-height);
 		margin-block-end: calc(var(--line-height) / 3);
@@ -37,6 +38,28 @@
 		margin-block-end: var(--line-height);
 		max-inline-size: 44ch;
 		text-wrap: pretty;
+	}
+
+	a {
+		color: var(--color-text-strong);
+		text-decoration-thickness: from-font;
+		text-decoration-skip-ink: auto;
+	}
+
+	a:hover {
+		color: var(--color-text-soft);
+	}
+
+	:is(a, button) {
+		touch-action: manipulation;
+		transition-property: background-color, border-color, box-shadow, filter, outline;
+		transition: 0.1s ease-out;
+	}
+
+	:is(a, button):where(:focus-visible) {
+		border-radius: var(--border-radius);
+		outline: var(--focus-ring-size, 2px) solid var(--color-text-strong);
+		outline-offset: var(--focus-ring-offset, 1px);
 	}
 
 	img,

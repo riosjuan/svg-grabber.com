@@ -1,7 +1,8 @@
-@layer reset, fonts, tokens, base, components;
+@layer reset, fonts, tokens, base, components, layout;
 
 @import url('./styles/reset.css') layer(reset);
 @import url('./styles/fonts.css') layer(fonts);
 @import url('./styles/tokens.css') layer(tokens);
 @import url('./styles/base.css') layer(base);
 @import url('./styles/components.css') layer(components);
+@import url('./styles/layout.css') layer(layout);
