@@ -126,7 +126,7 @@
 			0 0.4em 2em -1.2em oklch(var(--lch-blue-dark) / 0.25),
 			0 0.6em 2.4em -1.6em oklch(var(--lch-blue-dark) / 0.35),
 			0 0.8em 2.8em -2em oklch(var(--lch-blue-dark) / 0.45);
-		margin-block: calc(var(--line-height) * 2);
+		margin-block: 0 calc(var(--line-height) * 2);
 	}
 
 	/* Footer */
