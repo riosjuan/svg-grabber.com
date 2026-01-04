@@ -76,7 +76,6 @@
 	/* Steps */
 	.steps {
 		color: var(--color-text);
-		counter-reset: step;
 		display: flex;
 		flex-direction: column;
 		font-size: var(--font-size-small);
@@ -85,23 +84,24 @@
 	}
 
 	.step {
-		align-items: baseline;
-		counter-increment: step;
 		display: inline-flex;
 		gap: var(--line-height) var(--inline-spacing);
 		line-height: var(--line-height);
 
 		&:before {
-			align-items: center;
-			border-radius: 50%;
-			border: 1px solid currentColor;
 			color: var(--color-text-soft);
-			content: counter(step);
-			display: inline-flex;
-			flex-shrink: 0;
-			height: 1.5em;
-			justify-content: center;
-			width: 1.5em;
+		}
+
+		&:nth-child(1)::before {
+			content: '\2460';
+		}
+
+		&:nth-child(2)::before {
+			content: '\2461';
+		}
+
+		&:nth-child(3)::before {
+			content: '\2462';
 		}
 	}
 
@@ -112,7 +112,7 @@
 		}
 
 		.step:not(:last-of-type)::after {
-			content: '\E1D7';
+			content: '\2192';
 			color: var(--color-text-soft);
 		}
 	}
