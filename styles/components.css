@@ -1,6 +1,8 @@
 @layer components {
 	/* Logo */
 	.logo {
+		display: inline-block;
+
 		img {
 			height: clamp(calc(var(--block-spacing) * 3), var(--scale), calc(var(--block-spacing) * 4));
 		}
