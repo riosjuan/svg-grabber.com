@@ -22,7 +22,7 @@
 	}
 
 	section {
-		margin-block: calc(var(--line-height) * 2) var(--line-height);
+		margin-block: var(--line-height);
 	}
 
 	h2 {

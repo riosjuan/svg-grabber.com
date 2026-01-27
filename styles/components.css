@@ -20,11 +20,12 @@
 	.caption {
 		color: var(--color-text-soft);
 		font-size: var(--font-size-x-small);
-		margin-block: var(--line-height);
+		margin-block: calc(var(--line-height) / 2) var(--line-height);
 	}
 
 	.description {
 		max-width: 30ch;
+		margin-block-end: calc(var(--line-height) / 2);
 	}
 
 	/* Buttons */
@@ -101,6 +102,13 @@
 	}
 
 	/* Media */
+	.video {
+		border-radius: var(--border-radius);
+		height: auto;
+		max-width: 578px;
+		width: 100%;
+	}
+
 	.screenshot {
 		box-shadow:
 			0 0 0 1px oklch(var(--lch-blue-dark) / 0.05),

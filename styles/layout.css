@@ -1,7 +1,7 @@
 @layer layout {
 	.container {
 		margin-inline: auto;
-		width: min(100%, 80rem);
+		width: min(100%, 90rem);
 	}
 
 	.layout {
@@ -18,5 +18,11 @@
 		main {
 			margin-block-start: 3em;
 		}
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 578px), 1fr));
+		column-gap: 3rem;
 	}
 }
