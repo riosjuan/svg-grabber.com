@@ -35,8 +35,8 @@
 			</a>
 		</header>
 		<main class="container">
-			<div class="grid">
-				<div>
+			<div class="hero">
+				<div class="hero__content">
 					<h1 class="title">
 						Grab all the SVGs<br />
 						from any website
@@ -45,17 +45,18 @@
 						Preview, download, or copy the code for any SVG icon or illustration, ready to use in
 						Sketch, Figma, or Framer.
 					</p>
-					<a
-						class="button button--primary"
-						href="https://chromewebstore.google.com/detail/svg-grabber-get-all-the-s/eafjmnaiohflfhelegodfedimibnjpgp"
-						>Get svg-grabber</a
-					>
-					<p class="caption">4.3 ★ — 20,000+ users</p>
+					<div class="hero__cta">
+						<a
+							class="button button--primary hero__cta-button"
+							href="https://chromewebstore.google.com/detail/svg-grabber-get-all-the-s/eafjmnaiohflfhelegodfedimibnjpgp"
+							>Get svg-grabber</a
+						>
+						<p class="caption hero__cta-caption">4.3 ★ — 20,000+ users</p>
+					</div>
 				</div>
-
-				<div class="video-block">
+				<div class="hero__media">
 					<video
-						class="video"
+						class="hero__video"
 						id="demo-video"
 						autoplay
 						loop
@@ -64,16 +65,14 @@
 						preload="metadata"
 						poster="svg-grabber-demo-poster.png"
 						aria-label="Demo: Click the svg-grabber icon to open a tab of SVGs, then adjust the preview background and copy an SVG."
-						data-demo-video
 					>
 						<source src="svg-grabber-demo.mp4" type="video/mp4" />
 					</video>
 					<button
-						class="button button--blue button--icon video-toggle"
+						class="button button--blue button--icon hero__video-toggle"
 						type="button"
 						aria-pressed="false"
 						aria-controls="demo-video"
-						data-video-toggle
 					>
 						Pause
 					</button>
@@ -104,8 +103,8 @@
 		};
 		setYear();
 
-		const demoVideo = document.querySelector('[data-demo-video]');
-		const videoToggle = document.querySelector('[data-video-toggle]');
+		const demoVideo = document.querySelector('.hero__video');
+		const videoToggle = document.querySelector('.hero__video-toggle');
 		if (demoVideo && videoToggle) {
 			const playIcon = `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M6.52 2.122c.322-.175.713-.16 1.021.037l14 9a1 1 0 0 1 0 1.682l-14 9A1.001 1.001 0 0 1 6 21V3a1 1 0 0 1 .52-.878Z" fill="currentColor"/>
