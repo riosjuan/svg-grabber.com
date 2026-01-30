@@ -52,18 +52,32 @@
 					>
 					<p class="caption">4.3 ★ — 20,000+ users</p>
 				</div>
-				<video
-					class="video"
-					autoplay
-					loop
-					muted
-					playsinline
-					preload="metadata"
-					poster="svg-grabber-demo-poster.png"
-					aria-label="Demo: Click the svg-grabber icon to open a tab of SVGs, then adjust the preview background and copy an SVG."
-				>
-					<source src="svg-grabber-demo.mp4" type="video/mp4" />
-				</video>
+
+				<div class="video-block">
+					<video
+						class="video"
+						id="demo-video"
+						autoplay
+						loop
+						muted
+						playsinline
+						preload="metadata"
+						poster="svg-grabber-demo-poster.png"
+						aria-label="Demo: Click the svg-grabber icon to open a tab of SVGs, then adjust the preview background and copy an SVG."
+						data-demo-video
+					>
+						<source src="svg-grabber-demo.mp4" type="video/mp4" />
+					</video>
+					<button
+						class="button button--blue button--icon video-toggle"
+						type="button"
+						aria-pressed="false"
+						aria-controls="demo-video"
+						data-video-toggle
+					>
+						Pause
+					</button>
+				</div>
 			</div>
 			<section>
 				<h2>How it Works</h2>
@@ -89,5 +103,45 @@
 			document.getElementById('year').textContent = new Date().getFullYear();
 		};
 		setYear();
+
+		const demoVideo = document.querySelector('[data-demo-video]');
+		const videoToggle = document.querySelector('[data-video-toggle]');
+		if (demoVideo && videoToggle) {
+			const playIcon = `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6.52 2.122c.322-.175.713-.16 1.021.037l14 9a1 1 0 0 1 0 1.682l-14 9A1.001 1.001 0 0 1 6 21V3a1 1 0 0 1 .52-.878Z" fill="currentColor"/>
+</svg>`;
+
+			const updateToggle = () => {
+				const isPaused = demoVideo.paused;
+				const pauseIcon = `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M10 3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4ZM18 3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4Z" fill="currentColor"/>
+</svg>`;
+				videoToggle.innerHTML = isPaused ? playIcon : pauseIcon;
+				videoToggle.setAttribute('aria-label', isPaused ? 'Play' : 'Pause');
+				videoToggle.setAttribute('aria-pressed', isPaused ? 'false' : 'true');
+			};
+
+			videoToggle.addEventListener('click', (event) => {
+				if (demoVideo.paused) {
+					demoVideo.play().catch(() => {});
+				} else {
+					demoVideo.pause();
+				}
+				if (event.detail !== 0) {
+					videoToggle.blur();
+				}
+			});
+
+			demoVideo.addEventListener('play', updateToggle);
+			demoVideo.addEventListener('pause', updateToggle);
+			demoVideo.addEventListener('loadeddata', updateToggle);
+
+			if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+				demoVideo.pause();
+				demoVideo.removeAttribute('autoplay');
+			}
+
+			updateToggle();
+		}
 	</script>
 </html>

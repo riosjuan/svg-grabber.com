@@ -13,6 +13,9 @@
 		--color-text-soft: oklch(var(--lch-blue-light) / 0.75);
 		--color-border: oklch(var(--lch-white) / 0.25);
 
+		--color-button-blue: oklch(var(--lch-blue));
+		--color-button-hover: oklch(var(--lch-blue-dark));
+
 		/* Typography */
 		--font-family:
 			'InterVariable', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
