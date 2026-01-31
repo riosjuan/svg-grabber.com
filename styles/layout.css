@@ -16,7 +16,7 @@
 		}
 
 		main {
-			margin-block-start: 3em;
+			margin-block-start: clamp(1em, 1em + 2cqi, 3em);
 		}
 	}
 

@@ -38,7 +38,7 @@
 		font-size: var(--font-size-small);
 		font-weight: var(--font-weight-semi-bold);
 		justify-content: center;
-		padding: calc(var(--block-spacing) / 2) calc(var(--inline-spacing) * 2);
+		padding: calc(var(--block-spacing) / 2) var(--inline-spacing);
 		text-align: center;
 		text-decoration: none;
 
